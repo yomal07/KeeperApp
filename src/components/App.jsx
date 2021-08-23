@@ -10,6 +10,7 @@ function App(){
     return <div>
         <Header />
         {notes.map(oneNote =>  <Note 
+        key = {oneNote.key}
         title = {oneNote.title}
         description = {oneNote.content}
     />
